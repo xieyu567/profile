@@ -2,11 +2,12 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/profile",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "start": "next start",
+    "lint": "next lint",
     "format": "npx prettier --write ."
   },
   "dependencies": {
