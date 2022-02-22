@@ -1,5 +1,6 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillMail } from 'react-icons/ai';
+import { FaWeixin } from "react-icons/fa"
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
@@ -38,10 +39,10 @@ const Footer = () => {
             <AiFillGithub size='3rem' />
           </SocialIcons>
           <SocialIcons href='https://google.com'>
-            <AiFillLinkedin size='3rem' />
+            <AiFillMail size='3rem' />
           </SocialIcons>
           <SocialIcons href='https://google.com'>
-            <AiFillInstagram size='3rem' />
+            <FaWeixin size='3rem' />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
