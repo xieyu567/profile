@@ -13,8 +13,14 @@ jobs:
           npm ci
           npm run build
 
+      - name: Export static files
+        run: npm run export
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: .next/static # The folder the action should deploy.
+          folder: out # The folder the action should deploy.
